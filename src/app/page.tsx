@@ -33,18 +33,25 @@ export default function Home() {
         <span className="subtitle">WHAT ARE YOU LOOKING FOR?</span>
         <div className="search-input">
           <input
+            aria-label="Search"
             className="text-large input"
             placeholder="Search by name..."
             value={searchText}
             onChange={handleChangeSearchText}
             onKeyDown={handleEnter}
           />
-          <Button type="button-search" onClick={handleSearchClick}>
+          <Button
+            type="button-search"
+            onClick={handleSearchClick}
+            onKeyDown={handleEnter}
+          >
             Search
           </Button>
         </div>
       </div>
-      {searchText && searchClick && <Filter searchText={searchText} />}
+      {searchText && searchClick && (
+        <Filter searchText={searchText} searchClick={searchClick} />
+      )}
     </div>
   );
 }
