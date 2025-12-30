@@ -1,10 +1,13 @@
-export const user_information = [
+import User from "../types/User";
+
+export const user_information: User[] = [
   {
     name: "George Harris",
     role: "Software Engineer",
     team: "Security",
     email: "george.harris@example.com",
     user_type: "admin",
+    other_details: "Experienced software engineer with 5 years of experience",
   },
   {
     name: "Arianna Russo",
@@ -12,6 +15,7 @@ export const user_information = [
     team: "Website",
     email: "arianna.russo@example.com",
     user_type: "editor",
+    other_details: "Creative designer with a passion for user experience",
   },
   {
     name: "Marco Esposito",
@@ -19,6 +23,7 @@ export const user_information = [
     team: "Finance",
     email: "marco.esposito@example.com",
     user_type: "viewer",
+    other_details: "Detail-oriented designer with expertise in UI/UX",
   },
   {
     name: "Sarah Williams",
@@ -26,6 +31,7 @@ export const user_information = [
     team: "Security",
     email: "sarah.williams@example.com",
     user_type: "guest",
+    other_details: "Passionate about creating intuitive user interfaces",
   },
   {
     name: "Emma Clark",
@@ -33,6 +39,7 @@ export const user_information = [
     team: "Marketing",
     email: "emma.clark@example.com",
     user_type: "guest",
+    other_details: "Strategic product manager with focus on growth",
   },
   {
     name: "Victor Barnes",
@@ -40,6 +47,8 @@ export const user_information = [
     team: "Finance",
     email: "victor.barnes@example.com",
     user_type: "viewer",
+    other_details:
+      "Experienced product manager with a track record of successful launches",
   },
   {
     name: "Serena Parisi",
@@ -47,5 +56,6 @@ export const user_information = [
     team: "Marketing",
     email: "serena.parisi@example.com",
     user_type: "guest",
+    other_details: "Creative designer with a passion for innovative solutions",
   },
 ];
