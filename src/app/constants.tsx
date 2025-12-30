@@ -1,8 +1,10 @@
-export const filters = [
-  { role: "Admin", color: "first" },
-  { role: "Editor", color: "second" },
-  { role: "Viewer", color: "third" },
-  { role: "Guest", color: "fourth" },
-  { role: "Owner", color: "fifth" },
-  { role: "Inactive", color: "fifth" },
+import { User_Type } from "./types/Filter";
+
+export const filters: User_Type[] = [
+  "admin",
+  "editor",
+  "viewer",
+  "guest",
+  "owner",
+  "inactive",
 ];
