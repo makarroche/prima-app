@@ -1,0 +1,51 @@
+export const user_information = [
+  {
+    name: "George Harris",
+    role: "Software Engineer",
+    team: "Security",
+    email: "george.harris@example.com",
+    user_type: "admin",
+  },
+  {
+    name: "Arianna Russo",
+    role: "Product Designer",
+    team: "Website",
+    email: "arianna.russo@example.com",
+    user_type: "editor",
+  },
+  {
+    name: "Marco Esposito",
+    role: "Software Designer",
+    team: "Finance",
+    email: "marco.esposito@example.com",
+    user_type: "viewer",
+  },
+  {
+    name: "Sarah Williams",
+    role: "Product Designer",
+    team: "Security",
+    email: "sarah.williams@example.com",
+    user_type: "guest",
+  },
+  {
+    name: "Emma Clark",
+    role: "Product Manager",
+    team: "Marketing",
+    email: "emma.clark@example.com",
+    user_type: "guest",
+  },
+  {
+    name: "Victor Barnes",
+    role: "Product Manager",
+    team: "Finance",
+    email: "victor.barnes@example.com",
+    user_type: "viewer",
+  },
+  {
+    name: "Serena Parisi",
+    role: "Product Designer",
+    team: "Marketing",
+    email: "serena.parisi@example.com",
+    user_type: "guest",
+  },
+];
