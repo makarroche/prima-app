@@ -1,11 +1,8 @@
-import { useSearchedUsers } from "../hooks/useSearchedUsers";
 import { filters } from "../constants";
 import Badge from "./Badge";
 import Card from "./Card";
 import Feedback from "./Feedback";
-import { useState } from "react";
-import { User_Type } from "../types/Filter";
-import { User } from "../types/User";
+import { useUserFiltering } from "../hooks/useUserFiltering";
 
 type FilterProps = {
   searchText: string;
@@ -13,25 +10,13 @@ type FilterProps = {
 };
 
 const Filter = ({ searchText, searchClick }: FilterProps) => {
-  const searchedUsers = useSearchedUsers(searchText);
-  const [activeFilter, setActiveFilter] = useState<User_Type | null>(null);
-  const [filteredUsers, setFilteredUsers] = useState<User[]>(searchedUsers);
-
-  const isFilterActive = (user_type: User_Type) =>
-    (user_type !== null && activeFilter === user_type) || activeFilter === null;
-
-  const handleFilterChange = (user_type: User_Type) => {
-    setActiveFilter(user_type);
-    const filteredUsers = searchedUsers.filter(
-      (user) => user.user_type === user_type
-    );
-    setFilteredUsers(filteredUsers);
-  };
-
-  const handleClearFilters = () => {
-    setActiveFilter(null);
-    setFilteredUsers(searchedUsers);
-  };
+  const {
+    activeFilter,
+    filteredUsers,
+    isFilterActive,
+    handleFilterChange,
+    handleClearFilters,
+  } = useUserFiltering({ searchText });
 
   return (
     <div className="filter-container">
