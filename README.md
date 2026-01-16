@@ -21,3 +21,27 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 -> Search input filter clears the result when users type a new search term or backtrace, since we have a Search Button. 
 
 -> No loading states since the data is local and readily available.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
